@@ -1,0 +1,54 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+.sticky {
+    position: relative;
+    height: 60px;
+    width: 100%;
+  }
+  
+.logofil {
+    position: absolute;
+    top: 10px;
+    left: 75px;
+    border-radius: 60%;
+    background-color: aliceblue;
+    height: 35px;
+    width: 35px;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    border: solid rgb(52, 51, 51) 1px;
+    font-family:poppins;
+    font-weight: 600;
+    font-size: 25px;
+    font-stretch: normal;
+    line-height: 20px;
+    letter-spacing: normal;
+}
+  
+  .loginfil {
+    /* color: azure; */
+    /* position: absolute;
+    right: 250px;
+    top: 10px; */
+    /* padding-right: 40px; */
+    margin-right: 40px;
+  }
+  
+  .account {
+    /* position: absolute; */
+    /* right: 100px;
+    top: 10px; */
+    border-color: black;
+    height: 35px;
+    border-radius: 5px;
+  }
+  .position{
+    position: absolute;
+    top: 10px;
+    right: 10%;
+  }
+  /* col{
+    color: rgb(22, 100, 163);
+  } */

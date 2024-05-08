@@ -1,0 +1,58 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+h1, h3{
+    font-weight: 600;
+}
+.bgimg{
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.logo{
+    position:absolute;
+    top: 100px;
+    right: 47%;
+    border-radius: 60%;
+    background-color: aliceblue;
+    height: 99px;
+    width: 99px;
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    border: solid rgb(52, 51, 51) 1px;
+    font-family: poppins;
+    font-weight: 600;
+    font-size: 70px;
+    font-stretch: normal;
+    line-height: 80px;
+    letter-spacing: normal;
+}
+
+.topc{
+    width: 100%;
+    height:0px;
+    position: absolute;
+    top: 250px;
+    /* text-align: center; */
+}
+.dropdown{
+    /* display: block; */
+    /* width: 50%; */
+    /* z-index: 4; */
+    position: absolute;
+    /* top: 250px; */
+    /* left: 10%; */
+    /* width: 80%; */
+    /* margin: auto; */
+    /* text-align: center; */
+}
+
+.icon{
+    text-indent: 15%;
+    /* background-image: url('search.svg'); */
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='30' viewBox='0 0 30 20' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat;
+    background-repeat: no-repeat;
+    background-position:7%;
+    z-index: -1;
+}
