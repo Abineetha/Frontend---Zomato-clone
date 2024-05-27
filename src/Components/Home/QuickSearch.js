@@ -17,7 +17,7 @@ export default function QuickSearch() {
         <h5 style={{fontFamily:"'Dancing Script', cursive",
                     color:"#4B0082", 
                     textShadow: "2px 2px 4px rgba(75, 0, 130, 0.3)",
-                    marginTop:"20px", marginBottom:"20px"}}>food is always a good idea</h5>
+                    marginTop:"20px", marginBottom:"20px"}}>food is always a good idea !</h5>
         </center>
       </div>
     </div>
