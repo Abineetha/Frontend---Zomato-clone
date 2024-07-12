@@ -44,7 +44,7 @@ export default function Details() {
       setMenu(res.data);
     }).catch(err=>err)
     console.log(menu);
-  }, [restaurant.name, id])
+  }, [restaurant.name, id,menu])
 
   const menuOpen = () => {
     setMenuIsOpen(true);
