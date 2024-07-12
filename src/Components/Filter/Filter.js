@@ -24,7 +24,7 @@ export default function Filter() {
     const location_id = Number(sessionStorage.getItem('locationID'));
 
     const fetchLocation =()=>{
-        axios.get('http://localhost:8900/getAllLocation')
+        axios.get('https://backend-zomato-clone.onrender.com/getAllLocation')
         .then((res)=>
             setLocationData(res.data)
         )
@@ -43,13 +43,13 @@ export default function Filter() {
             highCost: highCost
         }
 
-        axios.get(`http://localhost:8900/mealTypeId/${mealtype_id}`)
+        axios.get(`https://backend-zomato-clone.onrender.com/mealTypeId/${mealtype_id}`)
         .then((res)=>{
             setRestaurantData(res.data)
         })
         .catch(err=>err);
 
-        axios.post("http://localhost:8900/filter",filterObject)
+        axios.post("https://backend-zomato-clone.onrender.com/filter",filterObject)
         .then((res)=>
             setRestaurantData(res.data)
         )
@@ -69,7 +69,7 @@ export default function Filter() {
             highCost: highCost
         }
 
-        axios.post("http://localhost:8900/filter",filterObject)
+        axios.post("https://backend-zomato-clone.onrender.com/filter",filterObject)
         .then((res)=>
             setRestaurantData(res.data)
         )
@@ -86,7 +86,7 @@ export default function Filter() {
             highCost: highCost
         }
 
-        axios.post("http://localhost:8900/filter",filterObject)
+        axios.post("https://backend-zomato-clone.onrender.com/filter",filterObject)
         .then((res)=>
             setRestaurantData(res.data)
         )

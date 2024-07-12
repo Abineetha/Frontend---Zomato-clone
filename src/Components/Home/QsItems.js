@@ -13,7 +13,7 @@ export default function QsItems() {
   const navigate = useNavigate();
   
   useEffect(() => {
-    axios.get("http://localhost:8900/getAllMealTypes")
+    axios.get("https://backend-zomato-clone.onrender.com/getAllMealTypes")
       .then((res) => {
         setMealtype(res.data)
       }).catch(err => err)

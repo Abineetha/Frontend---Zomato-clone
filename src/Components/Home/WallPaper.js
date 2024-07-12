@@ -11,7 +11,7 @@ export default function WallPaper() {
     const[inputtext, setInputtext] = useState('');
 
     useEffect(()=>{
-        axios.get('http://localhost:8900/getAllLocation')
+        axios.get('https://backend-zomato-clone.onrender.com/getAllLocation')
         .then((res)=>
             setLocation(res.data)
         )
@@ -22,7 +22,7 @@ export default function WallPaper() {
  const handleLocation=(e)=>{
       var locationId=e.target.value
       sessionStorage.setItem("locationID",Number(locationId))
-      axios.get(`http://localhost:8900/locationId/${locationId}`)
+      axios.get(`https://backend-zomato-clone.onrender.com/locationId/${locationId}`)
       .then((res)=>
         setRestaurants(res.data)
       ).catch(err=>err)

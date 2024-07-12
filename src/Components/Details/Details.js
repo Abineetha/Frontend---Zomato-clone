@@ -33,13 +33,13 @@ export default function Details() {
   const id = parsed.restaurant;
 
   useEffect(()=>{
-    axios.get(`http://localhost:8900/restById/${id}`)
+    axios.get(`https://backend-zomato-clone.onrender.com/restById/${id}`)
     .then((res)=>{
       setRestaurant(res.data);
     }).catch(err=>err)
     // console.log(restaurant);
 
-    axios.get(`http://localhost:8900/getMenu/${restaurant.name}`)
+    axios.get(`https://backend-zomato-clone.onrender.com/getMenu/${restaurant.name}`)
     .then((res)=>{
       setMenu(res.data);
     }).catch(err=>err)
@@ -48,7 +48,7 @@ export default function Details() {
 
   const menuOpen = () => {
     setMenuIsOpen(true);
-    axios.get(`http://localhost:8900/getMenu/${restaurant.name}`)
+    axios.get(`https://backend-zomato-clone.onrender.com/getMenu/${restaurant.name}`)
         .then((res) => {
             setMenu(res.data);
         }).catch(err=>err)

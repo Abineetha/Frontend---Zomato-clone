@@ -12,7 +12,7 @@ export default function MyTabs() {
 
 
   useEffect(()=>{
-    axios.get(`http://localhost:8900/restById/${id}`)
+    axios.get(`https://backend-zomato-clone.onrender.com/restById/${id}`)
     .then((res)=>{
       setRestaurant(res.data);  
     }).catch(err=>err)
